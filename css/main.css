@@ -1,0 +1,27 @@
+.list-group-item.ng-enter.ng-enter-active,
+.list-group-item.ng-leave{
+	opacity: 1;
+	height: 50px;
+	overflow: hidden;
+}
+.list-group-item.ng-leave.ng-leave-active,
+.list-group-item.ng-enter{
+	opacity: 0;
+	height: 0;
+	overflow: hidden;
+}
+img{
+	max-width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5)inset;
+}
+h4 span:last-child{
+	font-size: 12px;
+	display: block;
+	margin-top: 5px;
+}
+a{
+	cursor: pointer;
+}

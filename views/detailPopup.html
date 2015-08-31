@@ -1,0 +1,29 @@
+<div>
+        <div class="modal-header">
+            <h3 class="modal-title">{{authorDetail.name}}'s Details</h3>
+        </div>
+        <div class="modal-body">
+            <ul class="list-group alert">
+                <li ng-animate="'animate'" class="list-group-item">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img ng-src="./img/{{authorDetail.shortname}}.jpg" alt="{{authorDetail.shortname}} image">
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="row">
+                                <h4>
+                                    <span>{{authorDetail.name}}</span>
+                                    <span>{{authorDetail.title}}</span>
+                                </h4>                                
+                                <p>{{authorDetail.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+            <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+        </div>
+</div>

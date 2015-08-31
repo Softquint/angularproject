@@ -1,0 +1,29 @@
+<section class="listview">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3"></div>
+			<div class="col-lg-6">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2" ng-model="query">
+					<span class="input-group-addon" id="basic-addon2">Search</span>
+				</div>
+			</div>
+			<div class="col-lg-3"></div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3"></div>
+			<div class="col-lg-6">
+				<ul class="list-group">
+					<li ng-animate="'animate'" class="list-group-item" ng-repeat="author in dataset | filter:query">
+						<h4>{{author.name}}</h4>
+						<p>{{author.title}}</p>
+						<p>{{author.description  | limitTo: 150}}
+						<a ng-click="showDetail(author)">Read More</a>
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-3"></div>
+		</div>		
+	</div>
+</section>
